@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Resurrection Auto DEMO</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#"><img src="images/resurrection-logo.png" alt="Resurrection Auto Logo" class="nav-logo" /></a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#vin-services">VIN / DMV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="main-wrapper">
+
+    <div class="content">
+        <h1>Welcome to Resurrection Auto</h1>
+        <p>Custom Retrofitting and DMV & VIN number services for the timeless driver.</p>
+    </div>
+
+    <div class="gallery-section" id="gallery">
+        <h2>Our Custom Work</h2>
+        <div class="gallery">
+            <a href="projects/Pproject1.html" class="gallery">
+                <img src="https://placehold.co/300x200/8B0000/FFFFFF?text=Part+1" alt="Part 1">
+            </a>
+            <a href="projects/Pproject2.html" class="gallery">
+                <img src="https://placehold.co/300x200/8B0000/FFFFFF?text=Part+2" alt="Part 2">
+            </a>
+            <a href="projects/Pproject3.html" class="gallery">
+                <img src="https://placehold.co/300x200/8B0000/FFFFFF?text=Part+3" alt="Part 3">
+            </a>
+            <a href="projects/Pproject4.html" class="gallery">
+                <img src="https://placehold.co/300x200/8B0000/FFFFFF?text=Part+4" alt="Part 4">
+            </a>
+            <a href="projects/Pproject5.html" class="gallery">
+                <img src="https://placehold.co/300x200/8B0000/FFFFFF?text=Part+5" alt="Part 5">
+            </a>
+            <a href="projects/Pproject6.html" class="gallery">
+                <img src="https://placehold.co/300x200/8B0000/FFFFFF?text=Part+6" alt="Part 6">
+            </a>
+        </div>
+        <hr style="border: none; height: 2px; background: #333; margin: 80px auto 1px; width: 80%;">
+    </div>
+
+    <div class="vin-section" id="vin-services">
+        <h1>VIN Verification & DMV Services</h1>
+        <p>
+            We offer certified VIN verification and DMV support to help get your ride road-ready.
+            Whether you're working on a custom build or just transferred ownership, we've got your back.
+        </p>
+        <form onsubmit="return handleVinSubmit(event)">
+            <label for="vin">Enter your VIN (optional)</label>
+            <input type="text" id="vin" name="vin" placeholder="e.g. 1HGCM82633A123456">
+            <button type="submit">Request Verification</button>
+        </form>
+    </div>
+
+    <div class="contact-section" id="contact">
+        <h2>Get in Touch</h2>
+        <form action="https://formspree.io/f/xpwrrgzn" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>&copy; 2025 Resurrection Auto. All rights reserved.</p>
+        <p>Contact us: info@resurrectionauto.com | (555) 555-5555</p>
+        <p>123 Custom Lane, Motor City, USA</p>
+    </div>
+</footer>
+
+<script src="projectscripts/nav.js"></script>
+
+</body>
+</html>
