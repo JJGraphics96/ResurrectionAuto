@@ -1,0 +1,291 @@
+/* === Base Styles === */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  letter-spacing: 0.5px;
+}
+
+.main-wrapper {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* === Navbar === */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #111;
+  padding: 10px 20px;
+  z-index: 1000;
+  border-bottom: 2px solid #ff3333;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  height: 40px;
+  width: auto;
+  max-width: 300px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ff3333;
+}
+
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* === Logo Container === */
+.logo-container {
+  padding: 80px 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo-container img {
+  width: 100%;
+  max-width: 555px;
+  height: auto;
+  padding: 0 20px;
+  filter: drop-shadow(0 0 10px rgba(255, 51, 51, 0.5));
+}
+
+
+/* === Content === */
+.content {
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+  color: #ff3333;
+}
+
+p {
+  font-size: 1.1em;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+/* === Gallery & Category Banners === */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  border: 3px solid #ff3333;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.banner-img:hover {
+  transform: scale(1.02);
+}
+
+.banner-text {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* === Contact Section === */
+.contact-section {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #ff3333;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  background-color: #1f1f1f;
+  color: #fff;
+  outline: none;
+}
+
+.contact-section button {
+  padding: 14px;
+  font-size: 1em;
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.contact-section button:hover {
+  background-color: #cc0000;
+}
+
+/* === Footer === */
+.site-footer {
+  background-color: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 0.9em;
+  border-top: 2px solid #ff3333;
+}
+
+.site-footer p {
+  margin: 5px 0;
+}
+
+/* === Back Button === */
+.back-button-container {
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.back-button {
+  display: inline-block;
+  background-color: #ff3333;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background-color 0.2s ease;
+}
+
+.back-button:hover {
+  background-color: #cc0000;
+}
+
+/* === Responsive (Mobile) === */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    background-color: #111;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .logo-container img {
+    max-width: 280px;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.category-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .category-banner {
+    flex-direction: column-reverse;
+  }
+}
